@@ -1,6 +1,7 @@
 # PDF-Rechnung per PHP erstellen
 
 [**Download Source-Code (.zip)**](https://github.com/PHP-Einfach/pdf-rechnung/archive/master.zip)
+Weitere Informationen: [PDF-Rechnung per PHP erstellen](http://www.php-einfach.de/experte/php-codebeispiele/pdf-per-php-erstellen-pdf-rechnung/)
 
 In der Datei [rechnung.php](rechnung.php) findet ihr ein Beispiel, wie ihr mittels PHP PDF-Dokumente dynamisch erzeugen könnt. Hierzu wird im PHP-Script entsprechender HTML-Code definiert, der den Inhalt des PDFs bereit hält. Dieses wird anschließend mit der Library [tcpdf](https://tcpdf.org) in ein PDF-Dokument übersetzt. Hierdurch müsst ihr keine komplizierte Befehle zur Erzeugung des PDF-Dokuments lernen: Einfacher HTML-Code ist ausreichend.
 
