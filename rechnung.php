@@ -196,7 +196,4 @@ $pdf->Output($pdfName, 'I');
 //$pdf->Output(dirname(__FILE__).'/'.$pdfName, 'F');
 //echo 'PDF herunterladen: <a href="'.$pdfName.'">'.$pdfName.'</a>';
 
-//============================================================+
-// END OF FILE
-//============================================================+
 ?>
