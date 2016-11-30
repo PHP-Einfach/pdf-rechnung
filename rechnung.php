@@ -48,6 +48,8 @@ $rechnungs_posten = array(
 //Höhe eurer Umsatzsteuer. 0.19 für 19% Umsatzsteuer
 $umsatzsteuer = 0.0; 
 
+$pdfName = "Rechnung_".$rechnungs_nummer.".pdf";
+
 
 //////////////////////////// Inhalt des PDFs als HTML-Code \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -185,8 +187,14 @@ $pdf->AddPage();
 // Fügt den HTML Code in das PDF Dokument ein
 $pdf->writeHTML($html, true, false, true, false, '');
 
-//Close and output PDF document
-$pdf->Output('Rechnung_'.$rechnungs_nummer.'.pdf', 'I');
+//Ausgabe der PDF
+
+//Variante 1: PDF direkt an den Benutzer senden:
+$pdf->Output($pdfName, 'I');
+
+//Variante 2: PDF im Verzeichnis abspeichern:
+//$pdf->Output(dirname(__FILE__).'/'.$pdfName, 'F');
+//echo 'PDF herunterladen: <a href="'.$pdfName.'">'.$pdfName.'</a>';
 
 //============================================================+
 // END OF FILE
