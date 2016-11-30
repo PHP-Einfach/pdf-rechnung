@@ -20,7 +20,7 @@ Zum Schluss des Scripts habt ihr zwei Varianten für die Ausgabe des PDFs. Die e
 $pdf->Output($pdfName, 'I');
 ```
 
-Die zweite Variante ist, das PDF auf dem Server zu speichern. Dieses kann dann z.B. als E-Mail versendet werden oder der Link dem Benutzer angezeigt werden:
+Die zweite Variante ist, das PDF auf dem Server zu speichern. Hierzu ändert man den 'I'-Parameter zu 'F'. Das PDF kann dann z.B. als E-Mail versendet werden oder der Link dem Benutzer angezeigt werden:
 ```php
 //Variante 2: PDF im Verzeichnis abspeichern:
 $pdf->Output(dirname(__FILE__).'/'.$pdfName, 'F');
