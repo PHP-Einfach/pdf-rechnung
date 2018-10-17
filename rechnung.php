@@ -126,7 +126,7 @@ if($umsatzsteuer > 0) {
 				<td style="text-align: center;">'.number_format($netto , 2, ',', '').' Euro</td>
 			</tr>
 			<tr>
-				<td colspan="3">Mehrwertsteuer ('.intval($umsatzsteuer*100).'%)</td>
+				<td colspan="3">Umsatzsteuer ('.intval($umsatzsteuer*100).'%)</td>
 				<td style="text-align: center;">'.number_format($umsatzsteuer_betrag, 2, ',', '').' Euro</td>
 			</tr>';
 }
