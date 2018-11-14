@@ -169,7 +169,7 @@ $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
 // Auswahl des Font
 $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 
-// Auswahl der MArgins
+// Auswahl der Margins
 $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
 $pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
 $pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
