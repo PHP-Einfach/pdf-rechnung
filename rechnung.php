@@ -162,14 +162,20 @@ $pdf->SetTitle('Rechnung '.$rechnungs_nummer);
 $pdf->SetSubject('Rechnung '.$rechnungs_nummer);
 
 
-// Header und Footer Informationen
+// Header verbergen/anzeigen (Horizontale Linie wenn leer)
+$pdf->setPrintHeader(true);
+// Header Informationen
 $pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
+
+// Footer verbergen/anzeigen
+$pdf->setPrintFooter(true);
+// Footer Informationen
 $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
 
 // Auswahl des Font
 $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 
-// Auswahl der MArgins
+// Auswahl der Margins
 $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
 $pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
 $pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
